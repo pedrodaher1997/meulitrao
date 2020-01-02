@@ -1,17 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import {NavigationNativeContainer} from '@react-navigation/native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 const Tab = createMaterialTopTabNavigator();
 
-import List from './pages/List';
+import List from '../pages/List';
+import Header from '../components/Header';
 
 const App = () => {
   return (
     <NavigationNativeContainer>
-      <View style={{backgroundColor: '#fff', padding: 16}}>
-        <Text style={{fontSize: 18, fontWeight: 'bold'}}>Meu Litrão</Text>
-      </View>
+      <Header />
       <Tab.Navigator initialRouteName="Pendentes">
         <Tab.Screen
           name="Pendentes"
