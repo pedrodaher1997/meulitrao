@@ -10,11 +10,31 @@ const INITIAL_STATE = [
   {
     id: 0,
     name: 'Pedro Entringer',
-    status: 'devolvidos',
+    received: true,
     phone: '27981670051',
     items: [
-      {id: 0, item: 'Brahma - 1L', quantity: 5},
-      {id: 1, item: 'Brahma - Latão', quantity: 1},
+      {id: 0, item: 'Brahma - 1L', quantity: 5, received: true},
+      {id: 1, item: 'Brahma - Latão', quantity: 1, received: true},
+    ],
+  },
+  {
+    id: 0,
+    name: 'Pedro Entringer',
+    received: true,
+    phone: '27981670051',
+    items: [
+      {id: 0, item: 'Brahma - 1L', quantity: 5, received: false},
+      {id: 1, item: 'Brahma - Latão', quantity: 1, received: true},
+    ],
+  },
+  {
+    id: 0,
+    name: 'Pedro Entringer',
+    received: false,
+    phone: '27981670051',
+    items: [
+      {id: 0, item: 'Brahma - 1L', quantity: 5, received: true},
+      {id: 1, item: 'Brahma - Latão', quantity: 1, received: true},
     ],
   },
 ];

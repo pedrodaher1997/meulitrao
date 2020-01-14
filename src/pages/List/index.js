@@ -4,9 +4,9 @@ import {useSelector} from 'react-redux';
 import {Alert, AlertText, Container} from './styles';
 import ListItem from '../../components/ListItem';
 
-const List = ({status}) => {
+const List = ({received}) => {
   const orders = useSelector(state =>
-    state.orders.filter(order => order.status === status),
+    state.orders.filter(order => order.received === received),
   );
 
   return (

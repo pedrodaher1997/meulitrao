@@ -13,11 +13,11 @@ const App = () => {
       <Tab.Navigator initialRouteName="Pendentes">
         <Tab.Screen
           name="Pendentes"
-          component={() => <List status="pendentes" />}
+          component={() => <List received={false} />}
         />
         <Tab.Screen
           name="Devolvidos"
-          component={() => <List status="devolvidos" />}
+          component={() => <List received={true} />}
         />
       </Tab.Navigator>
     </NavigationNativeContainer>
